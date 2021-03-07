@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyCollectionViewCell" translatesAutoresizingMaskIntoConstraints="NO" id="gTV-IL-0wX" customClass="MyCollectionViewCell" customModule="SportsProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="271" height="266"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="271" height="266"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EK6-uQ-BIH">
+                        <rect key="frame" x="0.0" y="0.0" width="271" height="223"/>
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                    </imageView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" misplaced="YES" text="Lorem  " textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VEF-0r-xfV">
+                        <rect key="frame" x="0.0" y="222" width="271" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="guK-Qj-Hkg"/>
+                        </constraints>
+                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="VEF-0r-xfV" secondAttribute="trailing" id="8iy-WR-yDk"/>
+                <constraint firstItem="EK6-uQ-BIH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="OMM-RZ-YFk"/>
+                <constraint firstItem="EK6-uQ-BIH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Qqu-la-uyy"/>
+                <constraint firstItem="VEF-0r-xfV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Ugk-Bb-fWC"/>
+                <constraint firstAttribute="bottom" secondItem="VEF-0r-xfV" secondAttribute="bottom" id="Z8c-XI-EPk"/>
+                <constraint firstAttribute="trailing" secondItem="EK6-uQ-BIH" secondAttribute="trailing" id="k9c-D2-FMR"/>
+                <constraint firstItem="VEF-0r-xfV" firstAttribute="top" secondItem="EK6-uQ-BIH" secondAttribute="bottom" constant="8" symbolic="YES" id="nSx-eU-VOr"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="271" height="266"/>
+            <connections>
+                <outlet property="imageView" destination="EK6-uQ-BIH" id="1qt-Rn-qhw"/>
+                <outlet property="textView" destination="VEF-0r-xfV" id="STb-36-fUd"/>
+            </connections>
+            <point key="canvasLocation" x="290.57971014492756" y="36.160714285714285"/>
+        </collectionViewCell>
+    </objects>
+</document>
